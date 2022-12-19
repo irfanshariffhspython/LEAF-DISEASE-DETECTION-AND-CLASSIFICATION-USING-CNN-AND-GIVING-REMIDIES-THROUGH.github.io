@@ -1,0 +1,57 @@
+{% extends "base.html" %}
+{% block head_section %}
+<link rel="stylesheet" href="{{ url_for('static' ,filename='css/filestyle.css') }}" />
+{% endblock %}
+{% block body %}
+
+
+
+
+
+
+<center>
+<br>
+<br>
+<br>
+<!-- <div class="wrapper"> -->
+<div class="heading my-4 back" ><b>AI ENGINE</b></div>
+<div class="text back_1" >
+  <br>
+  <!--img scr ='static//image//141.jpg' --> 
+  <p><b>Upload a picture of a Plant and get immediate results!</b></p>
+   
+<!-- </div> -->
+<div class="inner  " >
+  <form id="analysis-form" enctype="multipart/form-data">
+    <div class="imgbox " >
+      <!--img src="{{ url_for('static' ,filename='image/141.jpg') }}" alt="Chicago" width="1100" height="500"-->
+      <!--div class="middle">
+        <div class="add"><span>SELECT IMAGE</span></div>
+        <input name="Select File" id="imagefile" type="file" /-->
+        <div class="upload-btn-wrapper ">
+          <button class="btn add value"><span>SELECT IMAGE</span> </button>
+          <input type="file"name="Select File" id="imagefile" />
+        </div>
+      </div>
+    </div>
+  </div>
+    <button id="analyze-button" class="analyze-button btn add btn-primary">
+      <span>Analyze</span>
+    </button>
+    <br>
+    <br>
+  </form>
+
+</center>
+<script src="{{ url_for('static' ,filename='js/client.js') }}"></script>
+<script>
+  var loadFile = function(event) {
+    var output = document.getElementById('output');
+    output.src = URL.createObjectURL(event.target.files[0]);
+    output.onload = function() {
+      URL.revokeObjectURL(output.src) 
+    }
+  };
+</script>
+
+{% endblock body %}

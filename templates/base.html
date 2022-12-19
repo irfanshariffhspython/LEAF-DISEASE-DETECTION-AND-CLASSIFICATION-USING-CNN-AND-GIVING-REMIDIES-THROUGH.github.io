@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Index Page</title>
+
+    <script
+    src="https://code.jquery.com/jquery-3.5.0.min.js"
+    integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+    crossorigin="anonymous">
+  </script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+<link rel="stylesheet" href="{{ url_for('static' ,filename='css/style.css') }}">
+
+<link rel="stylesheet" href="{{ url_for('static' ,filename='js/script.js') }}">
+<link rel="icon" href="{{ url_for('static' ,filename='image/leaf.png') }}" type="image/x-icon" />
+
+
+<!--disease -->
+<script
+      src="https://code.jquery.com/jquery-3.5.0.min.js"
+      integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ="
+      crossorigin="anonymous"
+    ></script>
+
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark pt-2 mt-2">
+          <div class="container-fluid">
+            <a class="navbar-brand text-center" href="#">Leaf Disease Detection</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+              <ul class="navbar-nav ml-auto mb-2 mb-md-0">
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="{{ url_for('index') }}">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="{{ url_for('about') }}">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="{{ url_for('Disease') }}">Leaf Diaseae</a>
+                    
+                </li>
+                
+                  <li class="nav-item" >
+                    <a class="nav-link" href="{{ url_for('Contact')}}" >Contact</a>
+                  </li>
+              </ul>
+              
+              <li>
+                
+
+                <!--element to show google transalte-->
+                <div id='google_translate_element' name='language'></div>
+
+                
+              </li>
+            </div>
+          </div>
+        </nav>
+      </header>
+      {% block body %}
+    {% endblock body %}
+
+
+  <!-- FOOTER -->
+  <footer class="">
+    <section id="footer">  
+        <div class="container">  
+        <div class="row text-center text-xs-center text-sm-left text-md-left">  
+        <div class="col-xs-12 col-sm-4 col-md-4">  
+        <h5> Quick links </h5>  
+          <ul class="list-unstyled quick-links">  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Videos </a> </li>  
+        </ul>  
+        </div>  
+            <div class="col-xs-12 col-sm-4 col-md-4">  
+            <h5> Quick links </h5>  
+            <ul class="list-unstyled quick-links">  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Our Services </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Expert Team </a> </li>  
+            </ul>  
+            </div>  
+            <div class="col-xs-12 col-sm-4 col-md-4">  
+            <h5> Quick links </h5>  
+                     <ul class="list-unstyled quick-links">  
+             <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Home </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> About </a></li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> FAQ </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Get Started </a> </li>  
+            <li> <a href="#"> <i class="fa fa-angle-double-right"> </i> Contact </a> </li>  
+            </ul>  
+            </div>  
+            </div>  
+            <div class="row">  
+            <div class="col-xs-6 col-sm-6 col-md-12 mt-2 mt-sm-3">  
+            <ul class="list-unstyled list-inline social text-center">  
+            <li class="list-inline-item"> <a href="#"> <i class="fa fa-facebook"> </i> </a> </li>  
+            <li class="list-inline-item"> <a href="#"> <i class="fa fa-twitter"> </i> </a> </li>  
+            <li class="list-inline-item"> <a href="#"> <i class="fa fa-instagram"> </i> </a> </li>  
+            <li class="list-inline-item"> <a href="#"> <i class="fa fa-google-plus"> </i > </a> </li>  
+            <li class="list-inline-item"> <a href="#"> <i class="fa fa-envelope"> </i> </a> </li>  
+            </ul>  
+            </div>  
+             
+            <p class="float-end"><a href="#">Back to top</a></p>
+            <div class="col-xs-6 col-sm-6 col-md-12 mt-2 mt-sm-3 text-center text-white">  
+           <p class="h6"> 2021–2022 Company, Inc.<a class="text-green ml-2" href="#" target="_blank">Privacy </a> </p>  
+           <a href="#">Terms</a>
+        </div>  
+            
+
+            <hr>  
+            </div>      
+            </div>  
+            <script src="{{ url_for('static' ,filename='js/client.js') }}"></script>
+            <script type="text/javascript" src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+      </footer>
+</main>
+</body>
+</html>

@@ -1,0 +1,120 @@
+{% extends "base.html" %}
+{% block body %}
+<main>
+
+        <div id="demo" class="carousel slide mt-4 pt-5" data-ride="carousel">
+            <ul class="carousel-indicators">
+              <li data-target="#demo" data-slide-to="0" class="active"></li>
+              <li data-target="#demo" data-slide-to="1"></li>
+              <li data-target="#demo" data-slide-to="2"></li>
+            </ul>
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{{ url_for('static' ,filename='image/D1.jpg') }}"  alt="Los Angeles" width="1100" height="500">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h1>Autumn Foliage</h1>
+                      <p>LEAF DISEASE DETECTION AND CLASSIFICATION USING CONVOLUTIONAL NEURAL NETWORK.</p>
+                      <p><a class="btn btn-lg btn-secondary bt-col" href="{{ url_for('Disease') }}">Leaf Disase Find</a></p>
+                    </div>
+                  </div>  
+              </div>
+              <div class="carousel-item">
+                <img src="{{ url_for('static' ,filename='image/D4.jpg') }}" alt="Chicago" width="1100" height="500">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h1>Autumn Foliage</h1>
+                      <p>LEAF DISEASE DETECTION AND CLASSIFICATION USING CONVOLUTIONAL NEURAL NETWORK</p>
+                      <p><a class="btn btn-lg btn-secondary bt-col" href="{{ url_for('Disease') }}">Leaf Disase Find</a></p>
+                    </div>
+                  </div>   
+              </div>
+              <div class="carousel-item">
+                <img src="{{ url_for('static' ,filename='image/D3.jpg') }}" alt="New York" width="1100" height="500">
+                <div class="container">
+                    <div class="carousel-caption text-start">
+                      <h1>Autumn Foliage</h1>
+                      <p>LEAF DISEASE DETECTION AND CLASSIFICATION USING CONVOLUTIONAL NEURAL NETWORK</p>
+                      <p><a class="btn btn-lg btn-secondary bt-col" href="{{ url_for('Disease') }}">Leaf Disase Find</a></p>
+                    </div>
+                  </div>
+              </div>
+            </div>
+            <a class="carousel-control-prev" href="#demo" data-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </a>
+            <a class="carousel-control-next" href="#demo" data-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </a>
+          </div>
+        
+
+    
+
+
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">About Growing  <span class="text-muted"></span></h2>
+        <p class="lead">Leaves are the most important organs of most vascular plants.Green plants are autotrophic, meaning that they do not obtain food from other living things but instead create their own food by photosynthesis. They capture the energy in sunlight and use it to make simple sugars, such as glucose and sucrose, from carbon dioxide and water. The sugars are then stored as starch, further processed by chemical synthesis into more complex organic molecules such as proteins or cellulose, the basic structural material in plant cell walls, or metabolized by cellular respiration to provide chemical energy to run cellular processes. The leaves draw water from the ground in the transpiration stream through a vascular conducting system known as xylem and obtain carbon dioxide from the atmosphere by diffusion through openings called stomata in the outer covering layer of the leaf (epidermis), while leaves are orientated to maximize their exposure to sunlight. Once sugar has been synthesized, it needs to be transported to areas of active growth such as the plant shoots and roots. Vascular plants transport sucrose in a special tissue called the phloem. The phloem and xylem are parallel to each other, but the transport of materials is usually in opposite directions. Within the leaf these vascular systems branch (ramify) to form veins which supply as much of the leaf as possible, ensuring that cells carrying out photosynthesis are close to the transportation system.</p>
+        <p class="lead"></p>
+        <p class="lead"></p>
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="600" height="700" src="{{ url_for('static' ,filename='image/14.jpeg') }}" role="img" aria-label="Placeholder:500*500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"><h3> <br></h3></text>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7 order-md-2">
+        <h2 class="featurette-heading"><span class="text-muted"></span></h2>
+        <p class="lead">Typically leaves are broad, flat and thin (dorsiventrally flattened), thereby maximising the surface area directly exposed to light and enabling the light to penetrate the tissues and reach the chloroplasts, thus promoting photosynthesis. They are arranged on the plant so as to expose their surfaces to light as efficiently as possible without shading each other, but there are many exceptions and complications. For instance, plants adapted to windy conditions may have pendent leaves, such as in many willows and eucalypts. The flat, or laminar, shape also maximizes thermal contact with the surrounding air, promoting cooling. Functionally, in addition to carrying out photosynthesis, the leaf is the principal site of transpiration, providing the energy required to draw the transpiration stream up from the roots, and guttation.</p>
+        <p class="lead">Many conifers have thin needle-like or scale-like leaves that can be advantageous in cold climates with frequent snow and frost. These are interpreted as reduced from megaphyllous leaves of their Devonian ancestors.[6] Some leaf forms are adapted to modulate the amount of light they absorb to avoid or mitigate excessive heat, ultraviolet damage, or desiccation, or to sacrifice light-absorption efficiency in favor of protection from herbivory.</p>
+
+        <p class="lead"></p>
+      </div>
+      <div class="col-md-5 order-md-1">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="800" height="700" src="{{ url_for('static' ,filename='image/t6.jpg') }}" role="img" aria-label="Placeholder: 800*700 " preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"><h3><br></h3></text>
+
+      </div>
+    </div>
+
+    <hr class="featurette-divider">
+
+    <div class="row featurette">
+      <div class="col-md-7">
+        <h2 class="featurette-heading">About Leaf Disease<span class="text-muted"></span></h2>
+        <p class="lead ">The first indication of disease in small plants is a drooping and wilting of lower leaves with a loss of green color followed by wilting and death of the plant. Often leaves on only one side of the stem turn golden yellow at first.</p>
+        <p class="lead ">the common diseases of tomato plants
+          <br>
+          1 )Bacterial Wilt. Bacterial wilt ( Ralstonia solanacearum) causing a rapid wilting of tomato plants.
+          <br>
+          2 )Early Blight. Early blight ( Alternaria solani) on tomato foliage.
+          <br>
+          3 )Late Blight. Late blight is a potentially serious disease of potato and tomato.
+          <br>
+          4 )Septoria Leaf Spot. Septoria leaf spot ( Septoria lycopersici) on tomato.
+          <br>
+          5 )Spider mites.the first step is always to isolate the affected plant.
+          <br>
+          6 )target spota.If your tomatoes have late blight.
+          <br>
+          7 )yellow leaf curl virus. Tomato yellow leaf curl virus is a DNA virus from the genus Begomovirus and the family Geminiviridae</p>
+        
+      </div>
+      <div class="col-md-5">
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="1280" height="1280" src="{{ url_for('static' ,filename='image/r3.jpeg') }}" role="img" aria-label="Placeholder: 1280*1280" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em"><h3>Tomato Leaf Disease</h3></text>      </div>
+    </div>
+
+    <!--hr class="featurette-divider"-->
+    <br>
+
+    <!-- /END THE FEATURETTES -->
+
+  </div><!-- /.container -->
+  {% endblock body %}
+
+
